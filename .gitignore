@@ -1,7 +1,6 @@
 .env
-logs/
 .user.yml
+
+logs/
 target/
 dbt_packages/
-# legacy -- renamed to dbt_packages in dbt v1
-dbt_modules/
