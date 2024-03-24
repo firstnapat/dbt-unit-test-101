@@ -4,4 +4,5 @@ sources:
   - name: dbt_unit_test
     schema: dbt_unit_test
     tables:
-      - name: pizza_sales
+      - name: payments_raw
+      - name: customers_raw
