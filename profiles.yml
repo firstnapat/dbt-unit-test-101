@@ -4,7 +4,7 @@ dbt_unit_test:
     test:
       dataset: dbt_unit_test
       fixed_retries: 1
-      keyfile: /Users/napatsakornpianchana/Documents/resouce/DEB1_Soft_File/data-bootcamp-skooldio-55a365886e41.json
+      keyfile: your-service-account-path.json
       location: asia-southeast1
       method: service-account
       priority: interactive
