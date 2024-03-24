@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_convert_thai_baht_to_us_dollars
+    description: <>
+    
+  - name: stg_customers_raw
+    description: <>
+
+  - name: stg_payments_raw
+    description: <>
