@@ -1,32 +1,31 @@
--- stg_convert_thai_baht_to_us_dollars.sql
-with payment_source as (
+with payment_info as (
     select 
       id
       , order_id
       , payment_method
-      , amount
-    from {{ ref('payments_raw') }}
+      , thai_amount
+    from {{ ref('stg_payments_raw') }}
 )
 
-, customer_source as (
+, customer_info as (
     select 
       id
       , first_name
       , last_name
-    from {{ ref('customers_raw') }}
+    from {{ ref('stg_customers_raw') }}
 )
 
-, map_payment_and_event as (
+, map_payments_and_customers as (
     select 
-        payment_source.id as payment_id
-        , customer_source.first_name
-        , customer_source.last_name
-        , payment_source.order_id
-        , payment_source.payment_method 
-        , payment_source.amount
-    from payment_source
-    join customer_source 
-    on payment_source.id = customer_source.id
+        payment_info.id as payment_id
+        , customer_info.first_name
+        , customer_info.last_name
+        , payment_info.order_id
+        , payment_info.payment_method 
+        , payment_info.thai_amount
+    from payment_info
+    join customer_info 
+    on payment_info.id = customer_info.id
 )
 
 , concat_customer_name as (
@@ -34,8 +33,8 @@ with payment_source as (
     payment_id
     , concat(first_name, ' ',last_name) as name
     , payment_method
-    , amount
-  from map_payment_and_event
+    , thai_amount
+  from map_payments_and_customers
 )
 
 , convert_thai_baht_to_us_dollars as (
@@ -45,7 +44,7 @@ with payment_source as (
       , payment_method
       -- `price` is currently stored in Thai Baht, 
       -- so we convert it to us dollars
-      , round(amount / 35.93, 2) as dollars_amount
+      , round(thai_amount / 35.93, 2) as dollars_amount
     from concat_customer_name
 )
 
