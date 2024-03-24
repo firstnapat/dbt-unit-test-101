@@ -1,0 +1,14 @@
+dbt_unit_test:
+  target: test
+  outputs:
+    test:
+      dataset: dbt_unit_test
+      fixed_retries: 1
+      keyfile: /Users/napatsakornpianchana/Documents/resouce/DEB1_Soft_File/data-bootcamp-skooldio-55a365886e41.json
+      location: asia-southeast1
+      method: service-account
+      priority: interactive
+      project: data-bootcamp-skooldio
+      threads: 1
+      timeout_seconds: 300
+      type: bigquery
