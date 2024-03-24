@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: dbt_unit_test
+    schema: dbt_unit_test
+    tables:
+      - name: pizza_sales

@@ -31,3 +31,207 @@ Runtime Error
 [0m15:48:10.266128 [debug] [MainThread]: Command `dbt init` failed at 15:48:10.266003 after 12.81 seconds
 [0m15:48:10.266573 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f3c450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f3bf50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103fd4210>]}
 [0m15:48:10.267060 [debug] [MainThread]: Flushing usage events
+[0m16:09:14.397755 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11336ca10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1133d48d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1133d5190>]}
+
+
+============================== 16:09:14.402428 | 84e941d5-1e71-4208-a3cb-2614be3b5986 ==============================
+[0m16:09:14.402428 [info ] [MainThread]: Running with dbt=1.7.10
+[0m16:09:14.403250 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/napatsakornpianchana/Documents/project/dbt-unit-test-101', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/napatsakornpianchana/Documents/project/dbt-unit-test-101/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run -m pizza_sales.sql', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:09:14.406513 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'dbt_unit_test'
+[0m16:09:14.408126 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.059968, "process_user_time": 1.393718, "process_kernel_time": 0.137547, "process_mem_max_rss": "99631104", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m16:09:14.408774 [debug] [MainThread]: Command `dbt run` failed at 16:09:14.408595 after 0.06 seconds
+[0m16:09:14.409212 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1133d4350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11336e790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104482a50>]}
+[0m16:09:14.409610 [debug] [MainThread]: Flushing usage events
+[0m16:10:15.730155 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10506cbd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1050d4c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1050d54d0>]}
+
+
+============================== 16:10:15.739917 | cdab9473-1495-4d44-99a6-317003e779e4 ==============================
+[0m16:10:15.739917 [info ] [MainThread]: Running with dbt=1.7.10
+[0m16:10:15.753981 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/Users/napatsakornpianchana/Documents/project/dbt-unit-test-101', 'log_path': '/Users/napatsakornpianchana/Documents/project/dbt-unit-test-101/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run -m pizza_sales.sql', 'send_anonymous_usage_stats': 'True'}
+[0m16:10:15.765709 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.bigquery'
+[0m16:10:15.767241 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "dbt_unit_test", target "test" invalid: Runtime Error
+    Could not find adapter type bigquery!
+[0m16:10:15.770501 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.13378184, "process_user_time": 2.024736, "process_kernel_time": 0.224349, "process_mem_max_rss": "100286464", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m16:10:15.771818 [debug] [MainThread]: Command `dbt run` failed at 16:10:15.771521 after 0.14 seconds
+[0m16:10:15.773155 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1050e66d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1050e57d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10097e9d0>]}
+[0m16:10:15.774208 [debug] [MainThread]: Flushing usage events
+[0m16:10:49.306464 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106aca350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b2a450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b2acd0>]}
+
+
+============================== 16:10:49.310209 | d8834f45-6bf5-4b07-8ff4-6a023732b3b0 ==============================
+[0m16:10:49.310209 [info ] [MainThread]: Running with dbt=1.7.10
+[0m16:10:49.310720 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/napatsakornpianchana/Documents/project/dbt-unit-test-101/logs', 'version_check': 'True', 'profiles_dir': '/Users/napatsakornpianchana/Documents/project/dbt-unit-test-101', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run -m pizza_sales.sql', 'send_anonymous_usage_stats': 'True'}
+[0m16:10:50.956650 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd8834f45-6bf5-4b07-8ff4-6a023732b3b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107971dd0>]}
+[0m16:10:51.023080 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd8834f45-6bf5-4b07-8ff4-6a023732b3b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b08050>]}
+[0m16:10:51.024373 [info ] [MainThread]: Registered adapter: bigquery=1.7.6
+[0m16:10:51.039419 [debug] [MainThread]: checksum: b88efa780424265bbbd676e971356ada6a7ea9debd0a80a519a6d2707465340d, vars: {}, profile: , target: , version: 1.7.10
+[0m16:10:51.040243 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m16:10:51.040660 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'd8834f45-6bf5-4b07-8ff4-6a023732b3b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c06790>]}
+[0m16:10:51.793742 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.dbt_unit_test.pizza_sales' (models/pizza_sales.sql) depends on a source named 'data_unit_test.pizza_sales' which was not found
+[0m16:10:51.796434 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 2.5350106, "process_user_time": 2.737904, "process_kernel_time": 0.298754, "process_mem_max_rss": "141574144", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m16:10:51.796943 [debug] [MainThread]: Command `dbt run` failed at 16:10:51.796824 after 2.54 seconds
+[0m16:10:51.797285 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b2aad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ad0250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107ce0fd0>]}
+[0m16:10:51.797601 [debug] [MainThread]: Flushing usage events
+[0m16:11:16.895145 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1104e30d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1124ce750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1124ced90>]}
+
+
+============================== 16:11:16.897897 | 6f7785b3-dc89-4692-85c6-62fbe80bd83e ==============================
+[0m16:11:16.897897 [info ] [MainThread]: Running with dbt=1.7.10
+[0m16:11:16.898281 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/Users/napatsakornpianchana/Documents/project/dbt-unit-test-101', 'log_path': '/Users/napatsakornpianchana/Documents/project/dbt-unit-test-101/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run -m pizza_sales.sql', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:11:17.191818 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6f7785b3-dc89-4692-85c6-62fbe80bd83e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115b56490>]}
+[0m16:11:17.228544 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6f7785b3-dc89-4692-85c6-62fbe80bd83e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115b471d0>]}
+[0m16:11:17.229378 [info ] [MainThread]: Registered adapter: bigquery=1.7.6
+[0m16:11:17.242770 [debug] [MainThread]: checksum: b88efa780424265bbbd676e971356ada6a7ea9debd0a80a519a6d2707465340d, vars: {}, profile: , target: , version: 1.7.10
+[0m16:11:17.243550 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m16:11:17.243855 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '6f7785b3-dc89-4692-85c6-62fbe80bd83e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115cadf90>]}
+[0m16:11:17.776646 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_unit_test.example
+[0m16:11:17.779302 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6f7785b3-dc89-4692-85c6-62fbe80bd83e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115fb5750>]}
+[0m16:11:17.787330 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6f7785b3-dc89-4692-85c6-62fbe80bd83e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1169a6f10>]}
+[0m16:11:17.787645 [info ] [MainThread]: Found 1 model, 1 source, 0 exposures, 0 metrics, 454 macros, 0 groups, 0 semantic models
+[0m16:11:17.787854 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6f7785b3-dc89-4692-85c6-62fbe80bd83e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115875110>]}
+[0m16:11:17.788646 [info ] [MainThread]: 
+[0m16:11:17.789110 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m16:11:17.789737 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_data-bootcamp-skooldio'
+[0m16:11:17.790005 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:11:18.927270 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_data-bootcamp-skooldio, now list_data-bootcamp-skooldio_dbt_unit_test)
+[0m16:11:18.927670 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:11:19.573375 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6f7785b3-dc89-4692-85c6-62fbe80bd83e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115c4aed0>]}
+[0m16:11:19.574571 [info ] [MainThread]: Concurrency: 1 threads (target='test')
+[0m16:11:19.575081 [info ] [MainThread]: 
+[0m16:11:19.578263 [debug] [Thread-1 (]: Began running node model.dbt_unit_test.pizza_sales
+[0m16:11:19.579030 [info ] [Thread-1 (]: 1 of 1 START sql view model dbt_unit_test.pizza_sales .......................... [RUN]
+[0m16:11:19.579989 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_data-bootcamp-skooldio_dbt_unit_test, now model.dbt_unit_test.pizza_sales)
+[0m16:11:19.580519 [debug] [Thread-1 (]: Began compiling node model.dbt_unit_test.pizza_sales
+[0m16:11:19.587766 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_unit_test.pizza_sales"
+[0m16:11:19.588509 [debug] [Thread-1 (]: Timing info for model.dbt_unit_test.pizza_sales (compile): 16:11:19.580835 => 16:11:19.588371
+[0m16:11:19.588737 [debug] [Thread-1 (]: Began executing node model.dbt_unit_test.pizza_sales
+[0m16:11:19.597676 [debug] [Thread-1 (]: Timing info for model.dbt_unit_test.pizza_sales (execute): 16:11:19.588850 => 16:11:19.597521
+[0m16:11:19.602001 [debug] [Thread-1 (]: Compilation Error in model pizza_sales (models/pizza_sales.sql)
+  Trying to create view `data-bootcamp-skooldio`.`dbt_unit_test`.`pizza_sales`, but it currently exists as a table. Either drop `data-bootcamp-skooldio`.`dbt_unit_test`.`pizza_sales` manually, or run dbt with `--full-refresh` and dbt will drop it for you.
+  
+  > in macro bigquery__handle_existing_table (macros/materializations/view.sql)
+  > called by macro handle_existing_table (macros/relations/view/replace.sql)
+  > called by macro bigquery__create_or_replace_view (macros/relations/view/replace.sql)
+  > called by macro materialization_view_bigquery (macros/materializations/view.sql)
+  > called by model pizza_sales (models/pizza_sales.sql)
+[0m16:11:19.602297 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6f7785b3-dc89-4692-85c6-62fbe80bd83e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116940750>]}
+[0m16:11:19.602596 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model dbt_unit_test.pizza_sales ................. [[31mERROR[0m in 0.02s]
+[0m16:11:19.602901 [debug] [Thread-1 (]: Finished running node model.dbt_unit_test.pizza_sales
+[0m16:11:19.603746 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:11:19.603896 [debug] [MainThread]: Connection 'model.dbt_unit_test.pizza_sales' was properly closed.
+[0m16:11:19.604053 [info ] [MainThread]: 
+[0m16:11:19.604222 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 1.82 seconds (1.82s).
+[0m16:11:19.604520 [debug] [MainThread]: Command end result
+[0m16:11:19.612133 [info ] [MainThread]: 
+[0m16:11:19.612353 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m16:11:19.612511 [info ] [MainThread]: 
+[0m16:11:19.612684 [error] [MainThread]:   Compilation Error in model pizza_sales (models/pizza_sales.sql)
+  Trying to create view `data-bootcamp-skooldio`.`dbt_unit_test`.`pizza_sales`, but it currently exists as a table. Either drop `data-bootcamp-skooldio`.`dbt_unit_test`.`pizza_sales` manually, or run dbt with `--full-refresh` and dbt will drop it for you.
+  
+  > in macro bigquery__handle_existing_table (macros/materializations/view.sql)
+  > called by macro handle_existing_table (macros/relations/view/replace.sql)
+  > called by macro bigquery__create_or_replace_view (macros/relations/view/replace.sql)
+  > called by macro materialization_view_bigquery (macros/materializations/view.sql)
+  > called by model pizza_sales (models/pizza_sales.sql)
+[0m16:11:19.612856 [info ] [MainThread]: 
+[0m16:11:19.613056 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m16:11:19.614159 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 2.7484667, "process_user_time": 1.618733, "process_kernel_time": 0.156274, "process_mem_max_rss": "146718720", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m16:11:19.614444 [debug] [MainThread]: Command `dbt run` failed at 16:11:19.614383 after 2.75 seconds
+[0m16:11:19.614651 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1124743d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1124e3bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115f9bf50>]}
+[0m16:11:19.614869 [debug] [MainThread]: Flushing usage events
+[0m16:11:47.312439 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106865110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055dea50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068c6d10>]}
+
+
+============================== 16:11:47.315380 | c12cb7fa-c0de-4bfd-ad89-68375a3874ec ==============================
+[0m16:11:47.315380 [info ] [MainThread]: Running with dbt=1.7.10
+[0m16:11:47.315839 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/napatsakornpianchana/Documents/project/dbt-unit-test-101/logs', 'version_check': 'True', 'profiles_dir': '/Users/napatsakornpianchana/Documents/project/dbt-unit-test-101', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run -m stg_pizza_sales.sql', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:11:47.659394 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c12cb7fa-c0de-4bfd-ad89-68375a3874ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111f35c50>]}
+[0m16:11:47.714844 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c12cb7fa-c0de-4bfd-ad89-68375a3874ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106874bd0>]}
+[0m16:11:47.715519 [info ] [MainThread]: Registered adapter: bigquery=1.7.6
+[0m16:11:47.728107 [debug] [MainThread]: checksum: b88efa780424265bbbd676e971356ada6a7ea9debd0a80a519a6d2707465340d, vars: {}, profile: , target: , version: 1.7.10
+[0m16:11:47.755495 [debug] [MainThread]: Partial parsing enabled: 1 files deleted, 1 files added, 0 files changed.
+[0m16:11:47.756010 [debug] [MainThread]: Partial parsing: added file: dbt_unit_test://models/stg_pizza_sales.sql
+[0m16:11:47.756296 [debug] [MainThread]: Partial parsing: deleted file: dbt_unit_test://models/pizza_sales.sql
+[0m16:11:47.843907 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_unit_test.example
+[0m16:11:47.847612 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c12cb7fa-c0de-4bfd-ad89-68375a3874ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111a1ed10>]}
+[0m16:11:47.856113 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c12cb7fa-c0de-4bfd-ad89-68375a3874ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11244e910>]}
+[0m16:11:47.856544 [info ] [MainThread]: Found 1 model, 1 source, 0 exposures, 0 metrics, 454 macros, 0 groups, 0 semantic models
+[0m16:11:47.856848 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c12cb7fa-c0de-4bfd-ad89-68375a3874ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111f3fa90>]}
+[0m16:11:47.857926 [info ] [MainThread]: 
+[0m16:11:47.858565 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m16:11:47.859391 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_data-bootcamp-skooldio'
+[0m16:11:47.859764 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:11:48.734312 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_data-bootcamp-skooldio, now list_data-bootcamp-skooldio_dbt_unit_test)
+[0m16:11:48.734693 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:11:49.404007 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c12cb7fa-c0de-4bfd-ad89-68375a3874ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112187110>]}
+[0m16:11:49.405856 [info ] [MainThread]: Concurrency: 1 threads (target='test')
+[0m16:11:49.406523 [info ] [MainThread]: 
+[0m16:11:49.410141 [debug] [Thread-1 (]: Began running node model.dbt_unit_test.stg_pizza_sales
+[0m16:11:49.411068 [info ] [Thread-1 (]: 1 of 1 START sql view model dbt_unit_test.stg_pizza_sales ...................... [RUN]
+[0m16:11:49.413165 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_data-bootcamp-skooldio_dbt_unit_test, now model.dbt_unit_test.stg_pizza_sales)
+[0m16:11:49.414031 [debug] [Thread-1 (]: Began compiling node model.dbt_unit_test.stg_pizza_sales
+[0m16:11:49.420489 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_unit_test.stg_pizza_sales"
+[0m16:11:49.421299 [debug] [Thread-1 (]: Timing info for model.dbt_unit_test.stg_pizza_sales (compile): 16:11:49.414608 => 16:11:49.421093
+[0m16:11:49.421583 [debug] [Thread-1 (]: Began executing node model.dbt_unit_test.stg_pizza_sales
+[0m16:11:49.443649 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_unit_test.stg_pizza_sales"
+[0m16:11:49.444813 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:11:49.445912 [debug] [Thread-1 (]: On model.dbt_unit_test.stg_pizza_sales: /* {"app": "dbt", "dbt_version": "1.7.10", "profile_name": "dbt_unit_test", "target_name": "test", "node_id": "model.dbt_unit_test.stg_pizza_sales"} */
+
+
+  create or replace view `data-bootcamp-skooldio`.`dbt_unit_test`.`stg_pizza_sales`
+  OPTIONS()
+  as with source as (
+
+    select * from `data-bootcamp-skooldio`.`dbt_unit_test`.`pizza_sales`
+
+),
+
+renamed as (
+    select
+    order_details_id
+    , order_id
+    , pizza_id
+    , quantity
+    , order_date
+    , order_time
+    , unit_price
+    , total_price
+    , pizza_size
+    , pizza_category
+    , pizza_ingredients
+    , pizza_name
+    from source
+
+)
+
+select * from renamed;
+
+
+[0m16:11:51.443920 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=data-bootcamp-skooldio&j=bq:asia-southeast1:72903d92-a661-4c17-abc2-f98087f5e202&page=queryresults
+[0m16:11:51.757816 [debug] [Thread-1 (]: Timing info for model.dbt_unit_test.stg_pizza_sales (execute): 16:11:49.421732 => 16:11:51.757666
+[0m16:11:51.758446 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c12cb7fa-c0de-4bfd-ad89-68375a3874ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11229b8d0>]}
+[0m16:11:51.758895 [info ] [Thread-1 (]: 1 of 1 OK created sql view model dbt_unit_test.stg_pizza_sales ................. [[32mCREATE VIEW (0 processed)[0m in 2.35s]
+[0m16:11:51.759282 [debug] [Thread-1 (]: Finished running node model.dbt_unit_test.stg_pizza_sales
+[0m16:11:51.760266 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:11:51.760465 [debug] [MainThread]: Connection 'model.dbt_unit_test.stg_pizza_sales' was properly closed.
+[0m16:11:51.760669 [info ] [MainThread]: 
+[0m16:11:51.760878 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 3.90 seconds (3.90s).
+[0m16:11:51.761241 [debug] [MainThread]: Command end result
+[0m16:11:51.767374 [info ] [MainThread]: 
+[0m16:11:51.767633 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:11:51.767834 [info ] [MainThread]: 
+[0m16:11:51.768045 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m16:11:51.769018 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 4.490722, "process_user_time": 1.863404, "process_kernel_time": 0.170582, "process_mem_max_rss": "144654336", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m16:11:51.769365 [debug] [MainThread]: Command `dbt run` succeeded at 16:11:51.769291 after 4.49 seconds
+[0m16:11:51.769611 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10686c290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068c6f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1026a32d0>]}
+[0m16:11:51.769845 [debug] [MainThread]: Flushing usage events
